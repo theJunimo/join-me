@@ -1,0 +1,67 @@
+.CardItem {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 20rem;
+    height: 23rem;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    
+    &:hover, &:active {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    }
+
+    .card-photo {
+        width: 100%;
+        height: 65%;
+        background-color: black;
+    }
+
+    .card-content {
+        display: flex;
+        height: 55%;
+        flex-direction: column;
+        padding: 1rem;
+
+        .category {
+            margin: 0;
+            color: #868e96;
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .detail {
+            font-size: 0.9rem;
+        }
+    }
+
+    .etc-wrapper{
+        display: flex;
+
+        .margin-left {
+            margin-left:auto;
+        }
+
+        .subinfo {
+            font-size: 0.9rem;
+            color: #868e96;
+        }
+
+        .subinfo-dot{
+            font-size: 0.9rem;
+            color: #868e96;
+            
+            &::before{
+                color: #adb5bd;
+                margin: 0 3px;
+                content: "·";
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.CardList {
+    margin: 2rem 0;
+
+    h1{
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

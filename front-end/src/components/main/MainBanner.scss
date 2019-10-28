@@ -1,0 +1,30 @@
+
+.MainBanner {
+    width: 100%;
+    display: flex;
+    min-height: 20rem;
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #343a40;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+
+        .button-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    img{
+        width: 55%;
+        margin-left: auto;
+    }
+}
