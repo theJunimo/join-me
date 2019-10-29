@@ -12,9 +12,26 @@
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    
+
     &:hover{
         background-color:#e9ecef;
         color: $main-blue;
+    }
+}
+
+.ButtonNavWithBorder {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: $main-blue;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    
+    &:hover{
+        background-color:white;
+        color: $main-blue;
+        border: 2px solid $main-blue;
     }
 }

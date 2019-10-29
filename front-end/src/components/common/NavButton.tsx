@@ -2,7 +2,7 @@ import React from 'react';
 import './NavButton.scss';
 import { NavLink } from 'react-router-dom';
 
-type buttonStyle = 'PlainNav' | 'ButtonNav';
+type buttonStyle = 'PlainNav' | 'ButtonNav' | 'ButtonNavWithBorder';
 
 type NavButtonProps = {
     className: buttonStyle;
