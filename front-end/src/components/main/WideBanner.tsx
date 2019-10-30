@@ -12,7 +12,7 @@ function WideBanner({text, buttonText}: WideBannerProps) {
         <div className = 'WideBanner'>
             <p>{text}</p>
             <div className = 'button-wrapper'>
-            <NavButton to = 'search' className = 'ButtonNav'>{buttonText}</NavButton>
+            <NavButton to = 'search' className = 'ButtonNavWithBorder'>{buttonText}</NavButton>
             </div>
         </div>
     );

@@ -5,7 +5,8 @@
     border-radius: 8px;
     overflow: hidden;
     width: 20rem;
-    height: 23rem;
+    min-height: 27rem;
+    max-height: 27rem;
     border: 1px solid #e8e8e8;
     cursor: pointer;
     
@@ -15,13 +16,13 @@
 
     .card-photo {
         width: 100%;
-        height: 65%;
-        background-color: black;
+        height: 46%;
+        background-color: #e8e8e8;
     }
 
     .card-content {
         display: flex;
-        height: 55%;
+        flex: 1;
         flex-direction: column;
         padding: 1rem;
 
