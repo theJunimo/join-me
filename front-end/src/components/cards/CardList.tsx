@@ -21,16 +21,16 @@ function CardList({listTitle}: CardListProp) {
             comments: 2 
         },
         {
-            img: 'https://t1.daumcdn.net/cfile/tistory/2631EA3C56D4DB600B',
-            category: '언어/외국어',
-            title: '중급 영어회화 스터디',
-            people: 3,
-            place: '홍대입구역 장소 미정',
-            day: '매주 토요일',
-            time: '오후 9시 ~ 오후 10시',
-            price: '2,000원',
-            views: 100,
-            comments: 0 
+            img: 'https://images.velog.io/post-images/dvmflstm/36296210-fa20-11e9-9ef1-e719e1b7035c/algorithm-2.png',
+            category: 'IT/프로그래밍',
+            title: '퇴근 후 알고리즘 스터디 하실 분',
+            people: 0,
+            place: '신촌 장소 추후 결정',
+            day: '매주 화요일, 수요일, 목요일',
+            time: '오후 7시 ~ 오후 9시',
+            price: '5,000원',
+            views: 245,
+            comments: 2 
         },
         {
             img: 'https://cdn.dribbble.com/users/929787/screenshots/4093717/busy.jpg',
@@ -43,6 +43,18 @@ function CardList({listTitle}: CardListProp) {
             price: '5,000원',
             views: 300,
             comments: 5 
+        },
+        {
+            img: 'https://www.academiathinkenglish.es/wp-content/uploads/2015/08/cabecera-articulo-370x200_c.png',
+            category: '언어/외국어',
+            title: '중급 영어회화 스터디',
+            people: 3,
+            place: '홍대입구역 장소 미정',
+            day: '매주 토요일',
+            time: '오후 9시 ~ 오후 10시',
+            price: '2,000원',
+            views: 100,
+            comments: 0 
         },
         {
             img: 'https://ko.reactjs.org/logo-og.png',
@@ -66,18 +78,6 @@ function CardList({listTitle}: CardListProp) {
             time: '오후 12시 ~ 오후 2시',
             price: '무료',
             views: 500,
-            comments: 2 
-        },
-        {
-            img: 'https://images.velog.io/post-images/dvmflstm/36296210-fa20-11e9-9ef1-e719e1b7035c/algorithm-2.png',
-            category: 'IT/프로그래밍',
-            title: '퇴근 후 알고리즘 스터디 하실 분',
-            people: 0,
-            place: '신촌 장소 추후 결정',
-            day: '매주 화요일, 수요일, 목요일',
-            time: '오후 7시 ~ 오후 9시',
-            price: '5,000원',
-            views: 245,
             comments: 2 
         },
     ]
