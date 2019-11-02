@@ -1,0 +1,23 @@
+
+.OptionBox {
+    position: absolute;
+    width: 100%;
+    max-height: 8rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    overflow: scroll;
+    text-align: center;
+    
+    ul {
+        background-color: white;
+
+        li {
+            padding: 10px 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e8e8e8;
+            }
+        }
+    }
+}
