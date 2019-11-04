@@ -8,8 +8,8 @@ type SelectBoxProps = {
 }
 
 function SelectBox({name, optionList}: SelectBoxProps) {
-    const [selected, setSelected ] = useState(name);
-    const [optionVisible, setOptionVisible] = useState(false);
+    const [selected, setSelected ] = useState<string>(name);
+    const [optionVisible, setOptionVisible] = useState<boolean>(false);
     const handleOptionSelect = useCallback((option) => {
         setSelected(option);
         setOptionVisible(false);

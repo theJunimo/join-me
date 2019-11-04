@@ -7,7 +7,7 @@ type ToggleButtonProps = {
 }
 
 function ToggleButton({onClick, children}: ToggleButtonProps,) {
-    const [selected, setSelected] = useState(false);
+    const [selected, setSelected] = useState<boolean>(false);
 
     const handleClick = useCallback(() => {
         setSelected(!selected);

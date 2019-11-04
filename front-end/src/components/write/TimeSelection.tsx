@@ -18,7 +18,7 @@ function TimeSelection() {
         <div className = 'TimeSelection'>
             <SelectBox name = '오전/오후' optionList = {['오전', '오후']}></SelectBox>
             <SelectBox name = '시간대 선택' optionList = {getTimeArr}></SelectBox>
-            <span> ~ </span>
+            <span className = 'to'>~</span>
             <SelectBox name = '오전/오후' optionList = {['오전', '오후']}></SelectBox>
             <SelectBox name = '시간대 선택' optionList = {getTimeArr}></SelectBox>
         </div>

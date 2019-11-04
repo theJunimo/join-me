@@ -4,24 +4,23 @@ import SelectBox from 'components/common/selectBox/SelectBox';
 import ToggleButton from 'components/common/ToggleButton';
 
 function DaySelection() {
-    const [selectedDays, setSelectedDays] = useState(['']); 
-
+    const [selectedDays, setSelectedDays] = useState<string[]>([]); 
+    
     const handleClick = useCallback((day) => {
-        console.log('전체' + day);
-        const days = selectedDays.map((day) =>{
-            if(selectedDays.indexOf(day)) return selectedDays.filter((el) => (el !== day));
-            return selectedDays.push(day);
-        });
-
-        console.log(days);
+        const days: string[] = (selectedDays.indexOf(day) !== -1)
+                        ? 
+                        selectedDays.filter((el) => (el !== day)) 
+                        : 
+                        selectedDays.concat([day]);
+        setSelectedDays(days);
     }, [selectedDays]);
 
     return(
         <div className = 'DaySelection'>
-            <SelectBox name = '날짜 선택' optionList = {['매주', '격주']}/>
+            <SelectBox name = '매주 / 격주' optionList = {['매주', '격주']}/>
             <div className = 'daysList'>
                 {['월','화','수','목','금','토','일'].map((el, idx) => (
-                    <ToggleButton key = { idx } onClick = { handleClick } >{ el + '요일' }</ToggleButton>
+                    <ToggleButton key = { idx } onClick = { handleClick } >{ el }</ToggleButton>
                 ))}
             </div>
         </div>
