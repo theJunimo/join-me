@@ -6,11 +6,13 @@ type StyledInputProps = {
     name: string;
     placeholder: string;
     width?: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-function StyledInput({type, name, width, placeholder}: StyledInputProps) {
+function StyledInput({type, name, width, placeholder, onChange}: StyledInputProps) {
     return(
         <input
+            onChange = { onChange }
             className = 'StyledInput'
             style = {{width: width}}
             type = {type}

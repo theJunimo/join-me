@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState, useCallback }  from 'react';
 import './TimeSelection.scss';
 import SelectBox from 'components/common/selectBox/SelectBox';
 
 function TimeSelection() {
+    const [time, setTime] = useState<string>();
+    const handleClickTime = useCallback(() => {
+
+    }, []);
+
     const getTimeArr = 
         Array(48).fill(0).map((el, idx) => {
             const min = 30 * (idx);
@@ -16,11 +21,11 @@ function TimeSelection() {
 
     return(
         <div className = 'TimeSelection'>
-            <SelectBox name = '오전/오후' optionList = {['오전', '오후']}></SelectBox>
-            <SelectBox name = '시간대 선택' optionList = {getTimeArr}></SelectBox>
+            <SelectBox name = '오전/오후' optionList = {['오전', '오후']} onChange = {handleClickTime}></SelectBox>
+            <SelectBox name = '시간대 선택' optionList = {getTimeArr} onChange = {handleClickTime}></SelectBox>
             <span className = 'to'>~</span>
-            <SelectBox name = '오전/오후' optionList = {['오전', '오후']}></SelectBox>
-            <SelectBox name = '시간대 선택' optionList = {getTimeArr}></SelectBox>
+            <SelectBox name = '오전/오후' optionList = {['오전', '오후']} onChange = {handleClickTime}></SelectBox>
+            <SelectBox name = '시간대 선택' optionList = {getTimeArr} onChange = {handleClickTime}></SelectBox>
         </div>
     )
 }

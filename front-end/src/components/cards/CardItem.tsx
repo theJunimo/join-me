@@ -5,7 +5,7 @@ type CardItemProps = {
     img: string;
     category: string;
     title: string;
-    people: number;
+    people: string;
     place: string;
     day: string;
     time: string;
